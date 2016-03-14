@@ -14,7 +14,7 @@ app.get("/events", function(req, res) {
 	SSE.registryClient(req, res);
 });
 
-app.get("/push-event", function(req, res) {
+app.put("/push-event", function(req, res) {
 	SSE.notifyAll(req, res);
 });
 
